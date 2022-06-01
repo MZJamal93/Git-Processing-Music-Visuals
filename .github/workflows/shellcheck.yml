@@ -1,0 +1,14 @@
+
+
+on: [push, fork]
+
+
+
+jobs:
+ shellcheck:
+ name: ShellCheck
+ runs-on: ubuntu-latest
+  uses: ludeeus/action-shellcheck@1.1.0
+  with:
+   severity: error
+   
